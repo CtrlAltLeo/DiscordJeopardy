@@ -1,0 +1,20 @@
+[gd_scene format=2]
+
+[node name="editable_question" type="Node2D"]
+
+[node name="text" type="TextEdit" parent="."]
+margin_left = 1.0
+margin_top = 19.0
+margin_right = 97.0
+margin_bottom = 104.0
+wrap_enabled = true
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="value" type="Label" parent="."]
+margin_left = 25.0
+margin_top = 2.0
+margin_right = 69.0
+margin_bottom = 16.0
+text = "#Value"

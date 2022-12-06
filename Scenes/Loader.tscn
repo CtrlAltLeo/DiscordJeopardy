@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Code/Loader.gd" type="Script" id=1]
+
+[node name="Loader" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="list" type="VBoxContainer" parent="."]
+margin_left = 399.0
+margin_top = 21.0
+margin_right = 586.0
+margin_bottom = 549.0
+custom_constants/separation = 48
+
+[node name="Label" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "Loader
+"
+
+[node name="make_new" type="Button" parent="."]
+margin_left = 11.0
+margin_top = 33.0
+margin_right = 96.0
+margin_bottom = 53.0
+text = "Create New"
+
+[connection signal="pressed" from="make_new" to="." method="_on_make_new_pressed"]

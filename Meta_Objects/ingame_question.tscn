@@ -1,0 +1,126 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Graphics/Instruction Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Code/ingame_question.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=4]
+size = 50
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 47.5, 27.1875 )
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("ColorRect:margin_left")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ColorRect:margin_top")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("ColorRect:margin_right")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 95.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("ColorRect:margin_bottom")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 56.0 ]
+}
+
+[node name="ingame_question" type="Node2D"]
+position = Vector2( 13, -8 )
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -13.0
+margin_top = 13.0
+margin_right = 80.0
+margin_bottom = 61.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+color = Color( 0.00392157, 0.0862745, 0.952941, 1 )
+
+[node name="question" type="Label" parent="ColorRect"]
+visible = false
+margin_left = 32.0
+margin_top = 17.0
+margin_right = 432.0
+margin_bottom = 224.0
+grow_horizontal = 0
+grow_vertical = 0
+rect_scale = Vector2( 0.1, 0.1 )
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_fonts/font = SubResource( 4 )
+text = "What the fuck are even birds?"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="price" type="Label" parent="."]
+margin_left = -12.0
+margin_top = 9.0
+margin_right = 82.0
+margin_bottom = 65.0
+custom_colors/font_color = Color( 1, 0.960784, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "$1000"
+align = 1
+valign = 1
+
+[node name="clickable" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="clickable"]
+position = Vector2( 35, 37 )
+shape = SubResource( 2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 3 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[connection signal="mouse_entered" from="clickable" to="." method="_on_clickable_mouse_entered"]
+[connection signal="mouse_exited" from="clickable" to="." method="_on_clickable_mouse_exited"]
