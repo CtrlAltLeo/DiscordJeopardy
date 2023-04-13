@@ -45,11 +45,14 @@ margin_left = 5.0
 margin_top = 16.0
 margin_right = 202.0
 margin_bottom = 160.0
-window_title = "u made a fucky wucky"
+window_title = "SOMETHING AIN't RIGHT"
 
 [node name="text" type="RichTextLabel" parent="error_display"]
 margin_right = 196.0
 margin_bottom = 115.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="save_anyway" type="Button" parent="error_display"]
 anchor_top = 0.816
@@ -92,7 +95,6 @@ margin_top = 115.0
 margin_right = 162.0
 margin_bottom = 135.0
 text = "Yass"
-
 [connection signal="pressed" from="save" to="." method="_on_save_pressed"]
 [connection signal="pressed" from="load" to="." method="_on_load_pressed"]
 [connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]

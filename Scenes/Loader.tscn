@@ -11,6 +11,9 @@ margin_top = 21.0
 margin_right = 586.0
 margin_bottom = 549.0
 custom_constants/separation = 48
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Label" type="Label" parent="."]
 margin_right = 40.0
@@ -24,5 +27,4 @@ margin_top = 33.0
 margin_right = 96.0
 margin_bottom = 53.0
 text = "Create New"
-
 [connection signal="pressed" from="make_new" to="." method="_on_make_new_pressed"]

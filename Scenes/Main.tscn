@@ -39,7 +39,6 @@ text = "Tidy up Player
 - SFX board
 -Cinematic Intro
 - Early quit/end of game quit"
-
 [connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="VBoxContainer/Edit" to="." method="_on_Edit_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_Quit_pressed"]

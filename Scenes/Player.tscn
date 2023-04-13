@@ -26,8 +26,12 @@ margin_top = 53.0
 margin_right = 215.0
 margin_bottom = 100.0
 custom_fonts/font = SubResource( 1 )
-text = "Piss & shit for 800000000"
+text = "Spencer Lore
+"
 autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Label2" type="Label" parent="labels"]
 margin_left = 240.0
@@ -35,7 +39,8 @@ margin_top = 49.0
 margin_right = 364.0
 margin_bottom = 96.0
 custom_fonts/font = SubResource( 1 )
-text = "Piss & shit for 800000000"
+text = "Spencer Lore
+"
 autowrap = true
 
 [node name="Label3" type="Label" parent="labels"]
@@ -44,7 +49,8 @@ margin_top = 49.0
 margin_right = 505.0
 margin_bottom = 96.0
 custom_fonts/font = SubResource( 1 )
-text = "Piss & shit for 800000000"
+text = "Spencer Lore
+"
 autowrap = true
 
 [node name="Label4" type="Label" parent="labels"]
@@ -53,7 +59,8 @@ margin_top = 49.0
 margin_right = 659.0
 margin_bottom = 96.0
 custom_fonts/font = SubResource( 1 )
-text = "Piss & shit for 800000000"
+text = "Spencer Lore
+"
 autowrap = true
 
 [node name="Label5" type="Label" parent="labels"]
@@ -62,7 +69,8 @@ margin_top = 49.0
 margin_right = 804.0
 margin_bottom = 96.0
 custom_fonts/font = SubResource( 1 )
-text = "Piss & shit for 800000000"
+text = "Spencer Lore
+"
 autowrap = true
 
 [node name="Label6" type="Label" parent="labels"]
@@ -71,7 +79,8 @@ margin_top = 50.0
 margin_right = 948.0
 margin_bottom = 97.0
 custom_fonts/font = SubResource( 1 )
-text = "Piss & shit for 800000000"
+text = "Spencer Lore
+"
 autowrap = true
 
 [node name="questions" type="Node2D" parent="."]
