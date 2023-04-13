@@ -1,6 +1,6 @@
 # DiscordJeopardy
 Discord Jeopardy was started in 2021 by HexZ as a way for our friend group to get together and answer funny trivia about each other, and as a break from 
-playing that damn rage game all the time. 
+playing that valorant rage game all the time. 
 
 In 2022, Hex approached me and asked if it was possible to create a board for jeopardy for a more interactive experience. It didn't seem like too hard of a
 tasque, so I decided to give it a whirl. 
